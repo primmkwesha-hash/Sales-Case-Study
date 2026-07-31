@@ -67,4 +67,4 @@ The project includes the following visualizations:
 
 ### Conclusion
 
-This analysis provided valuable insights into sales performance, customer purchasing behaviour, pricing trends, and profitability. The findings highlight seasonal demand patterns, identify the best-performing sales periods, and demonstrate the relationship between pricing and sales volume. These insights can help business managers make informed decisions regarding inventory planning, pricing strategies, promotional campaigns, and resource allocation to improve overall business performance.
+This analysis provided valuable insights into the company's sales performance, customer purchasing behaviour, pricing strategy, and profitability. Sales performance was largely driven by the quantity of products sold rather than higher selling prices. Seasonal demand patterns and promotional activities significantly influenced revenue, while correlation analysis confirmed strong relationships between sales, quantity sold, and costs. These findings can support better pricing decisions, inventory planning, marketing strategies, and future promotional campaigns.
