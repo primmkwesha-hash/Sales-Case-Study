@@ -1,70 +1,132 @@
-## Sales Business Metrics Analysis
+# 📊 Sales Business Metrics Analysis
 
-### Project Overview
-This project analyzes retail sales data to uncover business insights that can support decision-making. The analysis focuses on identifying sales trends, customer purchasing patterns, pricing strategies, profitability, and peak sales periods. Python was used in Databricks for data cleaning, exploratory data analysis (EDA), business metrics, and data visualization.
+## Project Problem Statement
 
+Businesses generate large volumes of sales data daily, making it difficult to identify trends, monitor profitability, and evaluate overall business performance. Raw data alone provides little value unless it is transformed into meaningful insights. This project analyses historical sales data to uncover business trends, calculate key performance indicators (KPIs), and develop an interactive dashboard that supports informed business decision-making.
 
-### Dataset Information
-The dataset contains 1,053 rows and 14 columns, covering daily sales transactions from 2013 to 2016. It contains no missing values or duplicate records after data cleaning. The dataset includes sales, cost of sales, quantity sold, sales price per unit, gross profit, and date-related variables such as year, month, day, and day of the week.
+---
 
+## 🎯 Aim of the Project
 
-### Business Questions
-This analysis answers the following business questions:
+The aim of this project was to analyse sales business data using Python and Google Looker Studio to identify sales patterns, evaluate business performance, calculate important business metrics, and present the findings through an interactive dashboard.
 
-- Which month generated the highest sales?
-- Which month sold the highest quantity of products?
-- How did the average sales price change throughout the year?
-- Which months achieved the highest gross profit percentage?
-- Which were the highest and lowest sales days?
-- Which day of the week generated the highest average sales?
-- What relationships exist between sales, quantity sold, cost of sales, and sales price?
+---
 
+## 📌 Objectives and Steps Taken
 
-### Tools Used
+### Objectives
+- Import and understand the sales dataset.
+- Clean and prepare the data.
+- Perform Exploratory Data Analysis (EDA).
+- Calculate business KPIs.
+- Identify sales trends and patterns.
+- Build an interactive dashboard.
+- Present business insights and recommendations.
+
+### Steps Taken
+
+### 1. Data Understanding
+- Imported the dataset into Databricks.
+- Reviewed the dataset structure.
+- Checked for missing values and duplicates.
+- Verified data types.
+- Converted the Date column into datetime format.
+
+### 2. Data Preparation
+- Converted Sales and Cost of Sales from Decimal to Float.
+- Created new date fields:
+  - Year
+  - Month
+  - Month Number
+  - Day of Week
+- Calculated:
+  - Gross Profit
+  - Gross Profit Percentage
+  - Gross Profit per Unit
+  - Sales Price per Unit
+
+### 3. Exploratory Data Analysis (EDA)
+Analysed:
+- Monthly Sales
+- Yearly Sales
+- Sales by Day of Week
+- Quantity Sold
+- Gross Profit
+- Cost of Sales
+- Overall Business Performance
+
+### 4. Business KPIs
+Calculated:
+- Total Sales
+- Total Cost of Sales
+- Total Gross Profit
+- Total Quantity Sold
+- Average Sales Price per Unit
+- Average Gross Profit Percentage
+- Highest Sales Day
+- Lowest Sales Day
+- Total Transactions
+
+### 5. Dashboard Development
+Developed an interactive dashboard in Google Looker Studio containing:
+- Summary Page
+- Detailed Analysis Page
+- Glossary Page
+
+Dashboard features include:
+- KPI Scorecards
+- Sales Trend Over Time
+- Sales by Month
+- Sales by Day of Week
+- Sales vs Cost of Sales
+- Gross Profit Trend
+- Quantity Sold by Month
+- Interactive Filters
+
+---
+
+## 📈 Summary of Results
+
+The analysis revealed the following key findings:
+
+- Total Sales amounted to approximately **R186.9 million**.
+- Total Cost of Sales amounted to approximately **R194.0 million**.
+- The business recorded an overall **negative Gross Profit** of approximately **R7.1 million**, indicating that costs exceeded revenue.
+- Sales performance varied across different months, showing seasonal fluctuations.
+- Customer purchasing behaviour differed across the days of the week.
+- Quantity sold also varied by month, indicating changes in product demand.
+- Sales trends changed over time, highlighting periods of stronger and weaker business performance.
+- The dashboard provides an interactive way to monitor KPIs and explore business performance.
+
+---
+
+## 🛠️ Tools Used
+
 - Python
 - Pandas
+- NumPy
 - Matplotlib
-- Seaborn
 - Databricks
+- Google Looker Studio
+- GitHub
 
+---
 
-### Key Findings
+## ✅ Conclusion
 
-- May generated the highest total sales.
-- May also recorded the highest quantity of products sold.
-- October and November had the highest average sales prices.
-- August recorded one of the lowest average sales prices while maintaining strong sales performance.
-- October achieved the highest gross profit percentage, while December recorded the lowest.
-- The highest single-day sales exceeded R850,000, while the lowest sales days were below R30,000.
-- Saturday generated the highest average sales, followed by Friday, indicating stronger weekend demand.
-- Sales, Cost of Sales, and Quantity Sold showed an extremely strong positive correlation.
-- Sales Price per Unit showed a moderate negative correlation with Quantity Sold, suggesting that lower prices generally encourage higher sales volumes.
+This project successfully transformed raw sales data into meaningful business insights through data cleaning, exploratory data analysis, KPI development, and dashboard creation. The findings revealed that although the business generated strong sales revenue, the Cost of Sales exceeded Total Sales, resulting in an overall negative Gross Profit. This indicates the need for improved cost management to enhance profitability.
 
+The interactive dashboard allows users to monitor key business metrics, analyse sales trends, and make data-driven decisions. Overall, the project demonstrates practical skills in data preparation, business analysis, Python programming, dashboard development, and data visualisation.
 
-### Business Recommendations
+---
 
-- Increase inventory before high-demand months such as May and June.
-- Schedule promotions during slower months like November and December to boost sales.
-- Allocate additional staff and stock on Fridays and Saturdays to meet higher customer demand.
-- Investigate the causes of the lowest-performing sales days to identify opportunities for improvement.
-- Review pricing strategies used during successful months and apply similar approaches where appropriate.
-- Continue monitoring pricing to maintain a balance between profitability and customer demand.
+## 💡 Recommendations
 
+- Review and reduce the Cost of Sales to improve profitability.
+- Investigate the factors contributing to high-performing months and apply similar strategies during lower-performing periods.
+- Focus marketing efforts on the best-performing days of the week.
+- Monitor Gross Profit alongside Total Sales to improve financial performance.
+- Continue using dashboards to support business monitoring and decision-making.
+- Conduct further analysis at product and customer level to identify additional opportunities for growth.
 
-### Visualizations
-
-The project includes the following visualizations:
-
-- Monthly Sales Trend
-- Monthly Quantity Sold
-- Monthly Average Sales Price
-- Monthly Gross Profit Percentage
-- Top 10 Highest Sales Days
-- Top 10 Lowest Sales Days
-- Average Sales by Day of the Week
-- Correlation Heatmap
-
-
-### Conclusion
-
-This analysis provided valuable insights into the company's sales performance, customer purchasing behaviour, pricing strategy, and profitability. Sales performance was largely driven by the quantity of products sold rather than higher selling prices. Seasonal demand patterns and promotional activities significantly influenced revenue, while correlation analysis confirmed strong relationships between sales, quantity sold, and costs. These findings can support better pricing decisions, inventory planning, marketing strategies, and future promotional campaigns.
+---
